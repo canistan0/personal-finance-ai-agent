@@ -103,3 +103,118 @@ The process is:
 5. The final answer is shown to the user
 
 Each tool works separately, so it is easy to test and change them.This makes the system simple and organized.
+
+---
+
+## Step 3 – 15.05
+
+### Description of the testing process
+
+Testing was done during development of the system. Each tool was tested separately before testing the full program.
+
+The testing checked:
+
+- if the CSV file loads correctly
+- if calculations are correct
+- if the agent understands simple questions
+- if the system handles wrong input safely
+
+The tests were written using pytest.
+
+---
+
+### Test scenarios and explanation
+
+#### 1. CSV Reader Test
+
+Purpose:
+Check if the CSV file is loaded correctly.
+
+Test:
+
+- load `expenses.csv`
+
+Expected result:
+
+- data is loaded into a list
+- each row contains date, category, and amount
+
+---
+
+#### 2. Calculator Test
+
+Purpose:
+Check if calculations work correctly.
+
+Test:
+
+- input values: 10 and 20
+
+Expected result:
+
+- total = 30
+
+---
+
+#### 3. Agent Test
+
+Purpose:
+Check if the agent answers user questions correctly.
+
+Test examples:
+
+- “How much did I spend on food?”
+- “How much transport spending?”
+- “What is 15% of food spending?”
+
+Expected result:
+
+- correct answer is returned
+
+---
+
+#### 4. Invalid Input Test
+
+Purpose:
+Check how the system handles unknown input.
+
+Test:
+
+- random text input
+
+Expected result:
+
+- system shows a message like:
+  “Query not understood”
+
+---
+
+### Summary of testing results
+
+The tests were successful.
+
+The system:
+
+- loads data correctly
+- performs calculations correctly
+- answers supported questions
+- handles invalid input without crashing
+
+The modular structure made testing easier.
+
+---
+
+### Deployment preparation
+
+The system can be run locally as a command-line application.
+
+Requirements:
+
+- Python 3
+- required libraries from `requirements.txt`
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
