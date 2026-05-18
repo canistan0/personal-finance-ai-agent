@@ -218,3 +218,109 @@ Install dependencies:
 ```bash
 pip install -r requirements.txt
 ```
+
+---
+
+## Final Submission – 22.05
+
+### Final system description and goal
+
+The project is a Personal Finance AI Agent made in Python.
+
+The goal of the system is to help users understand their spending from a CSV file.
+
+The user can ask questions, and the system reads the data, does calculations, and gives answers.
+
+The system uses simple tools:
+
+- CSV Reader (loads data)
+- Calculator (does math)
+- Web Tool (extra context)
+- Summarizer (creates answers)
+- Agent (controls everything)
+
+---
+
+### Final programming concepts used
+
+The project uses:
+
+- classes
+- functions
+- lists and dictionaries
+- file handling
+- if statements
+- calculations
+- string handling
+- testing with pytest
+
+These are used to build and run the system.
+
+---
+
+### Final tools and their role
+
+CSV Reader:
+
+- reads expense data from CSV file
+
+Calculator:
+
+- calculates totals and percentages
+
+Web Tool:
+
+- gives simple extra information
+
+Summarizer:
+
+- turns results into readable text
+
+Agent:
+
+- decides what tools to use and controls the program
+
+---
+
+### Final testing results
+
+The system was tested and works correctly.
+
+It can:
+
+- load CSV data
+- calculate spending correctly
+- answer simple questions
+- handle wrong input without crashing
+
+---
+
+### Final deployment preparation
+
+The system runs locally on a computer.
+
+To start it:
+
+1. install requirements
+2. run
+
+The user types questions in the terminal and gets answers.
+
+---
+
+### Final deployment strategy
+
+This system is made for local use because it uses personal data.
+
+It can be improved later into:
+
+- a web application
+- an API system
+
+---
+
+### Final conclusion
+
+The project works as a simple AI assistant for personal finance.
+
+It uses tools, processes data, and gives useful answers to users.
